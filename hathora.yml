@@ -1,0 +1,24 @@
+types:
+  Users: User[]
+  User:
+    yPosition: float
+    score: int
+    userId: UserId
+  GameStatus: 
+    - LOBBY
+    - PLAYING
+  GameState:
+    users: Users
+    status: GameStatus
+    xPosition: float
+
+methods:
+  joinGame:
+  thrust:
+
+auth:
+  anonymous: {}
+
+userState: GameState
+error: string
+tick: 50
